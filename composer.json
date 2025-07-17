@@ -16,9 +16,12 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/basecore": "^1.0",
         "drupal/core-composer-scaffold": "^10.5",
         "drupal/core-project-message": "^10.5",
         "drupal/core-recommended": "^10.5",
+        "drupal/corporateclean": "^1.0",
+        "drupal/hero_block": "^2.0",
         "drush/drush": "^13.6"
     },
     "conflict": {

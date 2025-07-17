@@ -1,0 +1,38 @@
+<?php
+
+namespace Drupal\ssd_styling;
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+// Implements hook_page_attachments()
+function ssd_styling_page_attachments(array &$page) {
+
+	// Define the global lib, to always be added 
+	$libs = ["ssd_styling/global-styling"];
+	
+	// Retrieve the route name for conditional attachments
+	$routeName = \Drupal::routeMatch()->getRouteName();
+	
+	// Attach the solutions library if on the solutions page
+	if (str_contains($routeName, "solutions")) {
+		array_push($libs, "ssd_styling/solutions-styling")
+	}
+
+	// Attach the contact library if on the contact page
+	if (str_contains($routeName, "contact")) {
+		array_push($libs, "ssd_styling/contact-styling")
+	}
+
+	// Attach the about library if on the about page
+	if (str_contains($routeName, "about")) {
+		array_push($libs, "ssd_styling/about-styling")
+	}
+
+	// Attach the home library if on the home page
+	if (str_contains($routeName, "home")) {
+		array_push($libs, "ssd_styling/home-styling")
+	}
+
+	// Attach the libraries
+	$page['#attached']['library'] = $libs; 
+}

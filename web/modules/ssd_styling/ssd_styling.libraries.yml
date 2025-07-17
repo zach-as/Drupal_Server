@@ -1,0 +1,25 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/global.css: {}
+about-styling:
+  version: 1.x
+  css:
+    theme:
+      css/about.css: {}
+home-styling:
+  version: 1.x
+  css:
+    theme:
+      css/home.css: {}
+solutions-styling:
+  version: 1.x
+  css:
+    theme:
+      css/solutions.css: {}
+contact-styling:
+  version: 1.x
+  css:
+    theme:
+      css/contact.css: {}

@@ -1,0 +1,12 @@
+name: Sturtz Solutions Development - CSS Module
+description: Injects custom CSS into the Drupal server.
+package: SSD 
+
+type: module
+core_version_requirement: ^10.5 || ^11
+libraries:
+  - ssd_css/global-styling
+  - ssd_css/home-styling
+  - ssd_css/about-styling
+  - ssd_css/solutions-styling
+  - ssd_css/contact-styling

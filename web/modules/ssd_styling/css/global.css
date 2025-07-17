@@ -1,0 +1,8 @@
+body {
+	background: url(/img/bg_completing_puzzle.png) no-repeat center top;
+	-webkit-background-size: 2560px 1440px;
+	-moz-background-size: 2560px 1440px;
+	background-size: 2560px 1440px;
+	width: 100%;
+	display: table;
+}
